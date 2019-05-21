@@ -139,24 +139,224 @@ body {
   background-color: #1e242e;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 4.5rem;
+  color: #1F252E;
 }
 h2 {
-  font-size: 3rem;
+  font-size: 3.5rem;
+  color: #1F252E;
 }
 h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  color: #1F252E;
 }
 h4 {
-  font-size: 1rem;
+  font-size: 2.2rem;
+  color: #1F252E;
 }
 p {
-  font-size: 1rem;
+  font-size: 1.4rem;
   line-height: 1.4;
+  color: #1F252E;
 }
 .sourceContainer {
+  display: flex;
+  flex-flow: column wrap;
   background-color: white;
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
+}
+header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 25px;
+  padding-top: 50px;
+}
+header h1 {
+  padding-left: 4%;
+}
+header nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 50%;
+  padding-left: 10%;
+  padding-right: 5%;
+}
+header nav a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #1F252E;
+}
+.CTA {
+  background-image: url('../design-files/Hero-Image.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 678px;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.CTA span {
+  padding-top: 11%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.CTA span button {
+  width: 120px;
+  height: 46px;
+  color: white;
+  font-size: 1.4rem;
+  text-align: center;
+  background-color: #2a7be3;
+  border: 1px solid #2a7be3;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Rubik', sans-serif;
+}
+.CTA span button:hover {
+  background-color: white;
+  color: #2a7be3;
+  border: none;
+}
+.CTA .banner-txt {
+  font-size: 6.2rem;
+}
+.experiences {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 8.5% 4% 0 4%;
+  height: 921px;
+}
+.experiences div h2 {
+  padding-bottom: 10%;
+}
+.experiences .cardBox {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 90%;
+}
+.experiences .cardBox .card {
+  width: 27%;
+  display: flex;
+  flex-flow: column wrap;
+  border: 1px solid #092244;
+  border-radius: 5px;
+}
+.experiences .cardBox .img1 {
+  max-width: 100%;
+}
+.experiences .cardBox .viewBtn {
+  width: 120px;
+  height: 49px;
+  color: #2B7BE3;
+  font-size: 1.4rem;
+  text-align: center;
+  background-color: white;
+  border: 1px solid #2B7BE3;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Rubik', sans-serif;
+}
+.experiences .cardBox .viewBtn:hover {
+  background-color: white;
+  color: #2a7be3;
+  border: none;
+}
+.howItWorks {
+  padding: 0 6% 0 4%;
+}
+.howItWorks div h2 {
+  padding-bottom: 6%;
+}
+.howItWorks .stepContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+}
+.howItWorks .stepContainer .txtDiv {
+  width: 48%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.howItWorks .stepContainer .imgDiv {
+  width: 40.5%;
+}
+.howItWorks .stepContainer .bigP {
+  font-size: 2.5rem;
+}
+.howItWorks .stepContainer .img2 {
+  max-width: 100%;
+}
+.becomeAguide {
+  background-image: url('../design-files/Background\ Image.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 694px;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.becomeAguide span {
+  padding-top: 11%;
+  padding-left: 10%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.becomeAguide span h2,
+.becomeAguide span h3 {
+  color: white;
+}
+.becomeAguide span button {
+  width: 120px;
+  height: 46px;
+  color: white;
+  font-size: 1.4rem;
+  text-align: center;
+  background-color: #E97979;
+  border-radius: 4px;
+  border: 1px solid #E97979;
+  cursor: pointer;
+  font-family: 'Rubik', sans-serif;
+}
+.becomeAguide span button:hover {
+  background-color: white;
+  color: #E97979;
+  border: none;
+}
+.becomeAguide .banner-txt {
+  font-size: 6.2rem;
+}
+.triPanelBox {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.triPanelBox .panel {
+  height: 348px;
+  width: 292px;
+}
+.triPanelBox .panel img {
+  width: 100%;
+  height: 100%;
 }

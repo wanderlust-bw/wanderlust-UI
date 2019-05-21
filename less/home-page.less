@@ -1,0 +1,128 @@
+.CTA {
+    background-image: url('../design-files/Hero-Image.png');
+    background-repeat: no-repeat;
+    background-position: center; 
+    position: relative;
+    height: 678px;
+    width: 100%;
+    .flex-box(column, wrap);
+    .custom-layout(flex-start,center);
+
+    span {
+        padding-top: 11%;
+        .flex-box(column, wrap);
+        .custom-layout(center, center);
+
+        button {
+            .join-button(120px, 46px);
+        }
+    }
+
+    .banner-txt{
+        font-size: @giant-text;
+    }
+}
+
+.experiences {
+    .flex-box(column,wrap);
+    padding: 8.5% 4% 0 4%;
+    height: 921px;
+    
+    div h2 {
+        padding-bottom: 10%;
+    }
+
+    .cardBox{
+        .flex-box(row, wrap);
+        .custom-layout(space-evenly, flex-start);
+        height: 90%;
+
+        .card {
+            width: 27%;
+            .flex-box(column, wrap);
+            border: 1px solid #092244;	
+            border-radius: 5px;
+        }
+
+        .img1 {
+            max-width: 100%;
+            // max-height: 355px;
+        }
+
+        .viewBtn {
+            .view-details-btn(120px, 49px);
+        }
+    }
+}
+
+.howItWorks {
+    // height: 665px;
+    padding: 0 6% 0 4%;
+
+    div h2 {
+        padding-bottom: 6%;
+    }
+
+    .stepContainer{
+        display: flex;
+        .custom-layout(space-between, flex-start);
+        height: 100%;
+
+        .txtDiv {
+            width: 48%;
+            .flex-box(column, wrap);
+            .custom-layout(space-evenly, flex-start);
+        }
+        .imgDiv{
+            width: 40.5%;
+        }
+        .bigP {
+            font-size: @medium-text;
+        }
+        .img2 {
+            max-width: 100%;
+        }
+    }
+}
+
+.becomeAguide {
+    background-image: url('../design-files/Background\ Image.png');
+    background-repeat: no-repeat;
+    background-position: center; 
+    position: relative;
+    height: 694px;
+    width: 100%;
+    .flex-box(column, wrap);
+    .custom-layout(flex-start, flex-start);
+    
+    span {
+        padding-top: 11%;
+        padding-left: 10%;
+        .flex-box(column, wrap);
+        .custom-layout(space-evenly, flex-start);
+
+        h2, h3 {
+            color: white;
+        }
+        button {
+            .begin-button(120px, 46px);
+        }
+    }
+
+    .banner-txt{
+        font-size: @giant-text;
+    }
+
+}
+.triPanelBox {
+    .flex-box(row, wrap);
+    .custom-layout(space-evenly, center);
+    .panel {
+        height: 348px;	
+        width: 292px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
