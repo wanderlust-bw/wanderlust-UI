@@ -1,0 +1,27 @@
+// Mixins Here
+.flex-box(@direction, @wrap-nowrap) {
+    display: flex;
+    flex-flow: @direction @wrap-nowrap;
+}
+
+.custom-layout(@justify, @align) {
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.custom-button(@width, @height) {
+    width: @width;
+    height: @height;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    background-color: @ebony-clay;
+    border-radius: 10px;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+    }
+  }
