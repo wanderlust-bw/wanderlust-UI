@@ -16,6 +16,7 @@
     font-size: @small-text;
     text-align: center;
     background-color: @blue-button;
+    border: 1px solid @blue-button;
     border-radius: 4px;
     cursor: pointer;
     font-family: 'Rubik', sans-serif;
@@ -42,6 +43,25 @@
   &:hover {
     background-color: white;
     color: @blue-button;
+    border: none;
+  }
+}
+
+.begin-button(@width, @height) {
+  width: @width;
+  height: @height;
+  color: white;
+  font-size: @small-text;
+  text-align: center;
+  background-color: @begin-btn;
+  border-radius: 4px;
+  border: 1px solid @begin-btn;
+  cursor: pointer;
+  font-family: 'Rubik', sans-serif;
+
+  &:hover {
+    background-color: white;
+    color: @begin-btn;
     border: none;
   }
 }

@@ -25,15 +25,17 @@
 
 .experiences {
     .flex-box(column,wrap);
-    padding-top: 8.5%;
-
+    padding: 8.5% 4% 0 4%;
+    height: 921px;
+    
     div h2 {
         padding-bottom: 10%;
     }
 
     .cardBox{
-        .flex-box(column, wrap);
-        height: 920px;
+        .flex-box(row, wrap);
+        .custom-layout(space-evenly, flex-start);
+        height: 90%;
 
         .card {
             width: 27%;
@@ -54,7 +56,61 @@
 }
 
 .howItWorks {
-    .bigP {
-        font-size: @medium-text;
+    // height: 665px;
+    padding: 0 6% 0 4%;
+
+    div h2 {
+        padding-bottom: 6%;
     }
+
+    .stepContainer{
+        display: flex;
+        .custom-layout(space-between, flex-start);
+        height: 100%;
+
+        .txtDiv {
+            width: 48%;
+            .flex-box(column, wrap);
+            .custom-layout(space-evenly, flex-start);
+        }
+        .imgDiv{
+            width: 40.5%;
+        }
+        .bigP {
+            font-size: @medium-text;
+        }
+        .img2 {
+            max-width: 100%;
+        }
+    }
+}
+
+.becomeAguide {
+    background-image: url('../design-files/Background\ Image.png');
+    background-repeat: no-repeat;
+    background-position: center; 
+    position: relative;
+    height: 694px;
+    width: 100%;
+    .flex-box(column, wrap);
+    .custom-layout(flex-start, flex-start);
+    
+    span {
+        padding-top: 11%;
+        padding-left: 10%;
+        .flex-box(column, wrap);
+        .custom-layout(space-evenly, flex-start);
+
+        h2, h3 {
+            color: white;
+        }
+        button {
+            .begin-button(120px, 46px);
+        }
+    }
+
+    .banner-txt{
+        font-size: @giant-text;
+    }
+
 }

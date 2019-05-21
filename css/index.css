@@ -218,6 +218,7 @@ header nav a {
   font-size: 1.4rem;
   text-align: center;
   background-color: #2a7be3;
+  border: 1px solid #2a7be3;
   border-radius: 4px;
   cursor: pointer;
   font-family: 'Rubik', sans-serif;
@@ -233,15 +234,18 @@ header nav a {
 .experiences {
   display: flex;
   flex-flow: column wrap;
-  padding-top: 8.5%;
+  padding: 8.5% 4% 0 4%;
+  height: 921px;
 }
 .experiences div h2 {
   padding-bottom: 10%;
 }
 .experiences .cardBox {
   display: flex;
-  flex-flow: column wrap;
-  height: 920px;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 90%;
 }
 .experiences .cardBox .card {
   width: 27%;
@@ -270,6 +274,75 @@ header nav a {
   color: #2a7be3;
   border: none;
 }
-.howItWorks .bigP {
+.howItWorks {
+  padding: 0 6% 0 4%;
+}
+.howItWorks div h2 {
+  padding-bottom: 6%;
+}
+.howItWorks .stepContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+}
+.howItWorks .stepContainer .txtDiv {
+  width: 48%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.howItWorks .stepContainer .imgDiv {
+  width: 40.5%;
+}
+.howItWorks .stepContainer .bigP {
   font-size: 2.5rem;
+}
+.howItWorks .stepContainer .img2 {
+  max-width: 100%;
+}
+.becomeAguide {
+  background-image: url('../design-files/Background\ Image.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 694px;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.becomeAguide span {
+  padding-top: 11%;
+  padding-left: 10%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.becomeAguide span h2,
+.becomeAguide span h3 {
+  color: white;
+}
+.becomeAguide span button {
+  width: 120px;
+  height: 46px;
+  color: white;
+  font-size: 1.4rem;
+  text-align: center;
+  background-color: #E97979;
+  border-radius: 4px;
+  border: 1px solid #E97979;
+  cursor: pointer;
+  font-family: 'Rubik', sans-serif;
+}
+.becomeAguide span button:hover {
+  background-color: white;
+  color: #E97979;
+  border: none;
+}
+.becomeAguide .banner-txt {
+  font-size: 6.2rem;
 }
