@@ -1,0 +1,60 @@
+.CTA {
+    background-image: url('../design-files/Hero-Image.png');
+    background-repeat: no-repeat;
+    background-position: center; 
+    position: relative;
+    height: 678px;
+    width: 100%;
+    .flex-box(column, wrap);
+    .custom-layout(flex-start,center);
+
+    span {
+        padding-top: 11%;
+        .flex-box(column, wrap);
+        .custom-layout(center, center);
+
+        button {
+            .join-button(120px, 46px);
+        }
+    }
+
+    .banner-txt{
+        font-size: @giant-text;
+    }
+}
+
+.experiences {
+    .flex-box(column,wrap);
+    padding-top: 8.5%;
+
+    div h2 {
+        padding-bottom: 10%;
+    }
+
+    .cardBox{
+        .flex-box(column, wrap);
+        height: 920px;
+
+        .card {
+            width: 27%;
+            .flex-box(column, wrap);
+            border: 1px solid #092244;	
+            border-radius: 5px;
+        }
+
+        .img1 {
+            max-width: 100%;
+            // max-height: 355px;
+        }
+
+        .viewBtn {
+            .view-details-btn(120px, 49px);
+        }
+    }
+}
+
+.howItWorks {
+    .bigP {
+        font-size: @medium-text;
+    }
+}

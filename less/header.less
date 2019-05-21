@@ -1,0 +1,23 @@
+header {
+    .flex-box(row, wrap);
+    .custom-layout(space-between, flex-end);
+    margin-bottom: 25px;
+    padding-top: 50px;
+
+    h1 {
+        padding-left: 4%;
+    }
+
+    nav {
+        .flex-box(row, wrap);
+        .custom-layout(space-between, flex-end);
+        width: 50%;
+        padding-left: 10%;
+        padding-right: 5%;
+        a {
+            font-size: @small-text;
+            text-decoration: none;
+            color: @normal-txt-color;
+        }
+    }
+}

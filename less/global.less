@@ -1,5 +1,5 @@
 // General Styles
- * {
+  * {
     box-sizing: border-box;
   }
   
@@ -20,26 +20,32 @@
   
   h1 {
     font-size: @huge-text;
+    color: @normal-txt-color;
   }
   
   h2 {
     font-size: @large-text;
+    color: @normal-txt-color;
   }
   
   h3 {
     font-size: @medium-text;
+    color: @normal-txt-color;
   }
 
   h4 {
-    font-size: @small-text;
+    font-size: @card-title-text;
+    color: @normal-txt-color;
   }
   
   p {
     font-size: @small-text;
     line-height: 1.4;
+    color: @normal-txt-color;
   }
   
 .sourceContainer {
+    .flex-box(column, wrap);
     background-color: white;
     max-width: 1024px;
     width: 100%;
