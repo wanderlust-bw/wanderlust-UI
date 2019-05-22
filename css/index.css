@@ -155,6 +155,7 @@ h4 {
   font-size: 2.2rem;
   color: #1F252E;
   font-weight: 500;
+  padding: 8px 10px;
 }
 p {
   font-size: 1.4rem;
@@ -245,16 +246,16 @@ header nav a {
   display: flex;
   flex-flow: column wrap;
   padding: 8.5% 4% 0 4%;
-  height: 921px;
 }
 .experiences div h2 {
   padding-bottom: 10%;
 }
 .experiences .cardBox {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: flex-start;
+  align-content: stretch;
   height: 90%;
 }
 .experiences .cardBox .card {
@@ -263,9 +264,11 @@ header nav a {
   flex-flow: column wrap;
   border: 1px solid #092244;
   border-radius: 5px;
+  padding: 1% 0%;
 }
 .experiences .cardBox .card p {
   font-weight: 300;
+  margin: 2% 2.5%;
 }
 .experiences .cardBox .img1 {
   max-width: 100%;
@@ -282,6 +285,7 @@ header nav a {
   border-radius: 5px;
   cursor: pointer;
   font-family: 'Rubik', sans-serif;
+  margin: 5% 0% 0% 50%;
 }
 .experiences .cardBox .viewBtn:hover {
   background-color: white;
@@ -289,7 +293,7 @@ header nav a {
   border: none;
 }
 .howItWorks {
-  padding: 0 6% 0 4%;
+  padding: 8% 6% 0 4%;
 }
 .howItWorks div h2 {
   padding-bottom: 6%;
@@ -302,9 +306,10 @@ header nav a {
 }
 .howItWorks .stepContainer .txtDiv {
   width: 48%;
+  height: 500px;
   display: flex;
-  flex-flow: column wrap;
-  justify-content: space-evenly;
+  flex-flow: column nowrap;
+  justify-content: space-around;
   align-items: flex-start;
 }
 .howItWorks .stepContainer .imgDiv {
@@ -316,28 +321,39 @@ header nav a {
 .howItWorks .stepContainer .img2 {
   max-width: 100%;
 }
-.categoryContainer {
-  margin: 8% 0;
+.searchByActivity {
+  margin: 8% 4%;
 }
-.categoryContainer .triPanelBox {
+.searchByActivity .categoryContainer {
+  margin: 4% 0%;
+}
+.searchByActivity .categoryContainer .categoryTitle {
+  padding: 2% 0 2% 2%;
+}
+.searchByActivity .categoryContainer .triPanelBox {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
 }
-.categoryContainer .triPanelBox .panel {
+.searchByActivity .categoryContainer .triPanelBox .panel {
   height: 348px;
   width: 292px;
   position: relative;
 }
-.categoryContainer .triPanelBox .panel div {
+.searchByActivity .categoryContainer .triPanelBox .panel div {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.7);
   bottom: 0.01rem;
   width: 100%;
   height: 10%;
 }
-.categoryContainer .triPanelBox .panel img {
+.searchByActivity .categoryContainer .triPanelBox .panel p {
+  font-weight: 500;
+  font-size: 2.2rem;
+  text-align: center;
+}
+.searchByActivity .categoryContainer .triPanelBox .panel img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -388,4 +404,37 @@ header nav a {
 }
 .becomeAguide .banner-txt {
   font-size: 6.2rem;
+}
+.searchByLocation {
+  margin: 8% 4%;
+}
+.searchByLocation .triPanelBox {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 4%;
+}
+.searchByLocation .triPanelBox .panel {
+  height: 348px;
+  width: 292px;
+  position: relative;
+}
+.searchByLocation .triPanelBox .panel div {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  bottom: 0.01rem;
+  width: 100%;
+  height: 10%;
+}
+.searchByLocation .triPanelBox .panel p {
+  font-weight: 500;
+  font-size: 2.2rem;
+  text-align: center;
+}
+.searchByLocation .triPanelBox .panel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
 }
