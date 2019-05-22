@@ -1,9 +1,10 @@
 .CTA {
-    background-image: url('../design-files/Hero-Image.png');
+    background-image: url('../design-files/zach-betten-40138-unsplash.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center; 
     position: relative;
-    height: 678px;
+    height: 60vh;
     width: 100%;
     .flex-box(column, wrap);
     .custom-layout(flex-start,center);
@@ -18,15 +19,21 @@
         }
     }
 
-    .banner-txt{
+    #banner-txt{
         font-size: @giant-text;
+        font-weight: 400;
+        color: white;
+    }
+
+    #banner-sub-text{
+        color: whitesmoke;
     }
 }
 
 .experiences {
     .flex-box(column,wrap);
     padding: 8.5% 4% 0 4%;
-    height: 921px;
+    // height: 921px;
     
     div h2 {
         padding-bottom: 10%;
@@ -35,6 +42,7 @@
     .cardBox{
         .flex-box(row, wrap);
         .custom-layout(space-evenly, flex-start);
+        align-content: stretch;
         height: 90%;
 
         .card {
@@ -42,6 +50,12 @@
             .flex-box(column, wrap);
             border: 1px solid #092244;	
             border-radius: 5px;
+            padding: 1% 0%;
+
+            p {
+                font-weight: 300;
+                margin: 2% 2.5%;
+            }
         }
 
         .img1 {
@@ -51,13 +65,14 @@
 
         .viewBtn {
             .view-details-btn(120px, 49px);
+            margin: 5% 0% 0% 50%;
         }
     }
 }
 
 .howItWorks {
     // height: 665px;
-    padding: 0 6% 0 4%;
+    padding: 8% 6% 0 4%;
 
     div h2 {
         padding-bottom: 6%;
@@ -70,8 +85,9 @@
 
         .txtDiv {
             width: 48%;
-            .flex-box(column, wrap);
-            .custom-layout(space-evenly, flex-start);
+            height: 500px;
+            .flex-box(column, nowrap);
+            .custom-layout(space-around, flex-start);
         }
         .imgDiv{
             width: 40.5%;
@@ -85,18 +101,63 @@
     }
 }
 
+.searchByActivity{
+    margin: 8% 4%;
+
+    .categoryContainer{
+        margin: 4% 0%;
+
+        .categoryTitle{
+            padding: 2% 0 2% 2%
+        }
+
+        .triPanelBox {
+            .flex-box(row, wrap);
+            .custom-layout(space-evenly, center);
+            
+            .panel {
+                height: 348px;	
+                width: 292px;
+                position: relative;
+
+                div {
+                    position: absolute;
+                    background-color: rgba(255, 255, 255, 0.7);
+                    bottom: 0.01rem;
+                    width: 100%;
+                    height: 10%;
+                }
+
+                p {
+                    font-weight: 500;
+                    font-size: @card-title-text;
+                    text-align: center;
+                }
+                
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
 .becomeAguide {
-    background-image: url('../design-files/Background\ Image.png');
+    background-image: url('../design-files/wu-jianxiong-239318-unsplash.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center; 
     position: relative;
-    height: 694px;
+    height: 55vh;
     width: 100%;
     .flex-box(column, wrap);
     .custom-layout(flex-start, flex-start);
     
     span {
-        padding-top: 11%;
+        padding-top: 5%;
         padding-left: 10%;
         .flex-box(column, wrap);
         .custom-layout(space-evenly, flex-start);
@@ -114,15 +175,40 @@
     }
 
 }
-.triPanelBox {
-    .flex-box(row, wrap);
-    .custom-layout(space-evenly, center);
-    .panel {
-        height: 348px;	
-        width: 292px;
-        img {
-            width: 100%;
-            height: 100%;
+
+.searchByLocation {
+    margin: 8% 4%;
+
+    .triPanelBox {
+        .flex-box(row, wrap);
+        .custom-layout(space-evenly, center);
+        margin-top: 4%;
+
+        .panel {
+            height: 348px;	
+            width: 292px;
+            position: relative;
+
+            div {
+                position: absolute;
+                background-color: rgba(255, 255, 255, 0.7);
+                bottom: 0.01rem;
+                width: 100%;
+                height: 10%;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: @card-title-text;
+                text-align: center;
+            }
+            
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 5px;
+            }
         }
     }
 }
