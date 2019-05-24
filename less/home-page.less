@@ -44,6 +44,40 @@
     }
 }
 
+.CTA2 {
+    background-image: url('../design-files/annie-spratt-608001-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    position: relative;
+    height: 40vh;
+    width: 100%;
+    .flex-box(column, wrap);
+    .custom-layout(flex-start,center);
+
+    @media @tablet {
+        height: 40vh;
+    }
+
+    span {
+        padding-top: 11%;
+        .flex-box(column, wrap);
+        .custom-layout(center, center);
+
+    }
+
+    #banner-txt{
+        font-size: @giant-text;
+        font-weight: 400;
+        color: white;
+
+        @media @tablet {
+            font-size: @medium-text;
+            font-weight: 400;
+        }
+    }
+}
+
 .tabs {
     border-bottom: 1px solid lightgrey;
     .flex-box(row, wrap);
@@ -334,6 +368,18 @@
 
         div {
         text-align: center;
+        }
+    }
+}
+
+footer {
+    div {
+        text-align: center;
+        a {
+            font-size: @small-text;
+            text-decoration: none;
+            color: @normal-txt-color;
+            margin: 0 auto;
         }
     }
 }
