@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500&display=swap" rel="stylesheet">
 
     <link href="css/index.css" rel="stylesheet" />
+    <script src="./components/Tabs.js" async=""></script>
 
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -41,44 +42,55 @@
             </span>
         </div>
 
+        <!-- Trending topic top bar -->
+        <div class="tabs">
+            <div class="topics">
+              <span class="title">TRENDING EXPERIENCES:</span>
+              <div data-tab="all" class="tab active-tab">ALL</div>
+              <div data-tab="outdoor" class="tab">OUTDOORS</div>
+              <div data-tab="culinary" class="tab">CULINARY</div>
+              <div data-tab="music" class="tab">MUSIC</div>
+              <div data-tab="sports" class="tab">SPORTS</div>
+              <div data-tab="sightseeing" class="tab">SIGHTSEEING</div>
+            </div>
+          </div>
+
+
         <!-- Featured Experiences -->
         <section class="experiences container">
             
-            <div>
-                <h2>Featured Experiences</h2>
-            </div>
             <div class="cardBox container">
-                <div class="card card1 container">
+                <div data-tab="outdoor" class="card card1 container">
                     <h4>Sky Bridge Hike</h4>
-                    <img class="img1" src="../wanderlust-UI-Ramses/design-files/fabio-comparelli-696510-unsplash.jpg">
+                    <img class="img1" src="../wanderlust-UI-Ramses/design-files/maher-el-aridi-98330-unsplash.jpg">
                     <p>Come on the famous sky bridge hike and have your picture taken along the way.</p>
                     <button class="viewBtn">View Details</button>
                 </div>
-                <div class="card card2 container">
+                <div data-tab="culinary" class="card card2 container">
                     <h4>Food Tour</h4>
                     <img class="img1" src="design-files/jay-wennington-2065-unsplash.jpg">
                     <p>Five restaurants in two hours to explore culinary gems around the city.</p>
                     <button class="viewBtn">View Details</button>
                 </div>
-                <div class="card card3 container">
+                <div data-tab="culinary" class="card card3 container">
                     <h4>Academic Dinner Party</h4>
-                    <img class="img1">
+                    <img class="img1 uniqImg" src="design-files/redcharlie-739534-unsplash.jpg">
                     <p>Join 11 of the top academics from the University of Oxford for a casual dinner and conversation.</p>
                     <button class="viewBtn">View Details</button>
                 </div>
-                <div class="card card4 container">
+                <div data-tab="outdoor" class="card card4 container">
                     <h4>Picnic at Mary's Lake</h4>
                     <img class="img1" src="design-files/olivia-hutcherson-743663-unsplash.jpg">
                     <p>Wine and cheese by the lake. Bring a freind, meet new people, and enjoy the scenery.</p>
                     <button class="viewBtn">View Details</button>
                 </div>
-                <div class="card card5 container">
+                <div data-tab="music" class="card card5 container">
                     <h4>Karoake Night</h4>
                     <img class="img1" src="design-files/bruce-mars-558710-unsplash.jpg">
                     <p>A night of karoake, food, and drinks!</p>
                     <button class="viewBtn">View Details</button>
                 </div>
-                <div class="card card6 container">
+                <div data-tab="sports" class="card card6 container">
                     <h4>Locals Only Surf Club</h4>
                     <img class="img1" src="design-files/teddy-kelley-105544-unsplash.jpg">
                     <p>Get a guided experience to surf the secret shore at bonos beach.</p>
@@ -96,17 +108,17 @@
 
             <div class="stepContainer">
                 <div class="txtDiv">
-                    <div>
+                    <div class="steps">
                         <h3>Create an account</h3>
                         <br>
                         <p class="bigP">Personalize your information and build your network.</p>
                     </div>
-                    <div>
+                    <div class="steps">
                         <h3>Find your adventure</h3>
                         <br>
                         <p class="bigP">Search thousands of experieinces with curated recommendations.</p>
                     </div>
-                    <div>
+                    <div class="steps">
                         <h3>Jump In!</h3>
                         <br>
                         <p class="bigP">Log off and jumo into the real world. Meet your guide and try something new.</p>

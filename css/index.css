@@ -138,6 +138,12 @@ body {
   color: #5E6164;
   background-color: #1e242e;
 }
+@media (max-width: 500px) {
+  html,
+  body {
+    background-color: white;
+  }
+}
 h1 {
   font-size: 4.5rem;
   color: #1F252E;
@@ -171,6 +177,12 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .sourceContainer {
+    max-width: 100%;
+    width: 100%;
+  }
+}
 header {
   display: flex;
   flex-flow: row wrap;
@@ -178,6 +190,14 @@ header {
   align-items: flex-end;
   margin-bottom: 25px;
   padding-top: 50px;
+}
+@media (max-width: 1024px) {
+  header {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 header h1 {
   padding-left: 4%;
@@ -190,6 +210,11 @@ header nav {
   width: 50%;
   padding-left: 10%;
   padding-right: 5%;
+}
+@media (max-width: 1024px) {
+  header nav {
+    width: 100%;
+  }
 }
 header nav a {
   font-size: 1.4rem;
@@ -208,6 +233,11 @@ header nav a {
   flex-flow: column wrap;
   justify-content: flex-start;
   align-items: center;
+}
+@media (max-width: 800px) {
+  .CTA {
+    height: 40vh;
+  }
 }
 .CTA span {
   padding-top: 11%;
@@ -239,8 +269,68 @@ header nav a {
   font-weight: 400;
   color: white;
 }
+@media (max-width: 800px) {
+  .CTA #banner-txt {
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+}
 .CTA #banner-sub-text {
   color: whitesmoke;
+}
+@media (max-width: 800px) {
+  .CTA #banner-sub-text {
+    font-size: 2.5rem;
+  }
+}
+.tabs {
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 47px;
+  background-color: #fff;
+}
+@media (max-width: 1024px) {
+  .tabs {
+    display: none;
+  }
+}
+.tabs .topics {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: none;
+  align-items: center;
+}
+.tabs .topics .title {
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.tabs .topics .tab {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: none;
+  align-items: center;
+  color: #fff;
+  background-color: #2a7be3;
+  margin: 0 5px;
+  padding: 2px 10px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+.tabs .topics .tab .active-tab {
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #333;
+}
+.tabs .topics .tab:hover {
+  text-decoration: underline;
 }
 .experiences {
   display: flex;
@@ -250,25 +340,35 @@ header nav a {
 .experiences div h2 {
   padding-bottom: 10%;
 }
+@media (max-width: 1024px) {
+  .experiences {
+    display: none;
+  }
+}
 .experiences .cardBox {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: flex-start;
   align-content: stretch;
-  height: 90%;
 }
 .experiences .cardBox .card {
   width: 27%;
+  height: 40%;
   display: flex;
   flex-flow: column wrap;
   border: 1px solid #092244;
   border-radius: 5px;
   padding: 1% 0%;
+  margin-bottom: 2%;
+  overflow: hidden;
 }
 .experiences .cardBox .card p {
   font-weight: 300;
   margin: 2% 2.5%;
+}
+.experiences .cardBox .uniqImg {
+  height: 170px;
 }
 .experiences .cardBox .img1 {
   max-width: 100%;
@@ -298,6 +398,11 @@ header nav a {
 .howItWorks div h2 {
   padding-bottom: 6%;
 }
+@media (max-width: 500px) {
+  .howItWorks div h2 {
+    text-align: center;
+  }
+}
 .howItWorks .stepContainer {
   display: flex;
   justify-content: space-between;
@@ -312,8 +417,24 @@ header nav a {
   justify-content: space-around;
   align-items: flex-start;
 }
+@media (max-width: 500px) {
+  .howItWorks .stepContainer .txtDiv {
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .howItWorks .stepContainer .txtDiv .steps {
+    padding: 3% 0%;
+  }
+}
 .howItWorks .stepContainer .imgDiv {
   width: 40.5%;
+}
+@media (max-width: 500px) {
+  .howItWorks .stepContainer .imgDiv {
+    display: none;
+  }
 }
 .howItWorks .stepContainer .bigP {
   font-size: 2.5rem;
@@ -324,11 +445,21 @@ header nav a {
 .searchByActivity {
   margin: 8% 4%;
 }
+@media (max-width: 500px) {
+  .searchByActivity div {
+    text-align: center;
+  }
+}
 .searchByActivity .categoryContainer {
   margin: 4% 0%;
 }
 .searchByActivity .categoryContainer .categoryTitle {
   padding: 2% 0 2% 2%;
+}
+@media (max-width: 500px) {
+  .searchByActivity .categoryContainer .categoryTitle {
+    text-align: center;
+  }
 }
 .searchByActivity .categoryContainer .triPanelBox {
   display: flex;
@@ -340,6 +471,11 @@ header nav a {
   height: 348px;
   width: 292px;
   position: relative;
+}
+@media (max-width: 500px) {
+  .searchByActivity .categoryContainer .triPanelBox .panel {
+    padding: 2% 0%;
+  }
 }
 .searchByActivity .categoryContainer .triPanelBox .panel div {
   position: absolute;
@@ -420,6 +556,11 @@ header nav a {
   width: 292px;
   position: relative;
 }
+@media (max-width: 500px) {
+  .searchByLocation .triPanelBox .panel {
+    padding: 2% 0%;
+  }
+}
 .searchByLocation .triPanelBox .panel div {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.7);
@@ -437,4 +578,9 @@ header nav a {
   height: 100%;
   object-fit: cover;
   border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .searchByLocation div {
+    text-align: center;
+  }
 }
