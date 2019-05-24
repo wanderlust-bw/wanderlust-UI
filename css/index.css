@@ -531,6 +531,11 @@ header nav a {
   object-fit: cover;
   border-radius: 5px;
 }
+@media (max-width: 1024px) {
+  .searchByActivity .categoryContainer .triPanelBox .lastPanel {
+    display: none;
+  }
+}
 .becomeAguide {
   background-image: url('../design-files/wu-jianxiong-239318-unsplash.jpg');
   background-size: cover;
@@ -614,6 +619,11 @@ header nav a {
   height: 100%;
   object-fit: cover;
   border-radius: 5px;
+}
+@media (max-width: 1024px) {
+  .searchByLocation .triPanelBox .lastPanel {
+    display: none;
+  }
 }
 @media (max-width: 500px) {
   .searchByLocation div {
