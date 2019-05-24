@@ -283,6 +283,42 @@ header nav a {
     font-size: 2.5rem;
   }
 }
+.CTA2 {
+  background-image: url('../design-files/annie-spratt-608001-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .CTA2 {
+    height: 40vh;
+  }
+}
+.CTA2 span {
+  padding-top: 11%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.CTA2 #banner-txt {
+  font-size: 6.2rem;
+  font-weight: 400;
+  color: white;
+}
+@media (max-width: 800px) {
+  .CTA2 #banner-txt {
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+}
 .tabs {
   border-bottom: 1px solid lightgrey;
   display: flex;
@@ -583,4 +619,13 @@ header nav a {
   .searchByLocation div {
     text-align: center;
   }
+}
+footer div {
+  text-align: center;
+}
+footer div a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #1F252E;
+  margin: 0 auto;
 }
