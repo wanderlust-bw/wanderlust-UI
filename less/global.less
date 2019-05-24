@@ -8,9 +8,13 @@
   }
   
   html, body {
-  font-family: 'Rubik', sans-serif;
-  color: #5E6164;
-  background-color: #1e242e;
+    font-family: 'Rubik', sans-serif;
+    color: #5E6164;
+    background-color: #1e242e;
+
+    @media @phone{
+      background-color: white;
+    }
 }
   
 //   h1, h2, h3, h4, h5 {
@@ -54,5 +58,11 @@
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
+
+    @media @phone{
+      max-width: 100%;
+      width: 100%;
+      // text-align: center;
+    }
 }
 
